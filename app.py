@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # Carrega os dados do arquivo CSV
-#df = pd.read_csv("https://raw.githubusercontent.com/Where-is-V/Jobs-cancelados-mes/5078220065dc0a3be7555744136bf4316c19701a/dados-mes-final.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/Where-is-V/Jobs-cancelados-mes/5078220065dc0a3be7555744136bf4316c19701a/dados-mes-final.csv")
 
 
 # --- Barra Lateral (Filtros) ---
@@ -52,5 +52,6 @@ fig.update_layout(xaxis_tickangle=-45, showlegend=False)
 # Exibe o gráfico no Streamlit
 st.plotly_chart(fig, use_container_width=True)
 #
+
 
 
